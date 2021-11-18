@@ -155,11 +155,28 @@ body {
 }
 
 .sociale-items {
+	position: relative;
 	width: 96px;
 	display: flex;
-	align-items: flex-end;
+	flex-direction: column;
+	justify-content: flex-end;
+	text-align: center;
+}
+.sociale-items::before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 0;
+	height: 1px;
+	width: 60px;
+	transform: translateY(-50%);
+	background: var(--second-btn-color);
 }
 .sociale-item {
+	display: flex;
+	align-items: center;
+	transform: rotate(270deg);
+	height: 100px;
 }
 
 .sociale-item > a:hover,
@@ -180,8 +197,8 @@ body {
 	padding: 272px 0 206px 96px;
 	background: url(../images/Slider-img-3.jpg) no-repeat center;
 }
+
 .main-up-title {
-	margin-bottom: 20px;
 	font-weight: 600;
 	font-size: 11px;
 	line-height: 1.36;
@@ -191,15 +208,39 @@ body {
 
 	color: var(--second-text-color);
 }
+.up-titel-befor {
+	position: relative;
+	margin-bottom: 20px;
+	padding-left: 84px;
+	font-weight: 600;
+	font-size: 11px;
+	line-height: 1.36;
+
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+}
+.up-titel-befor::before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 0;
+	height: 1px;
+	width: 63px;
+	transform: translateY(-50%);
+	background: var(--second-text-color);
+}
 .main-title {
+	font-size: 72px;
+	line-height: 1.18;
+	color: var(--main-title-color);
+}
+.geniral-title {
 	margin-bottom: 20px;
 	font-family: Raleway;
 	font-weight: 700;
-	font-size: 72px;
-	line-height: 1.18;
 	letter-spacing: 0.05em;
-	color: var(--main-title-color);
 }
+
 .main-text {
 	font-size: 18px;
 	line-height: 1.67;
@@ -314,8 +355,10 @@ body {
 	background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
 }
 .service-item {
+	position: relative;
 	display: flex;
 	justify-content: space-between;
+	align-items: baseline;
 	font-size: 18px;
 	line-height: 1.67;
 	letter-spacing: 0.02em;
@@ -325,9 +368,17 @@ body {
 .service-item:not(:last-child) {
 	margin-bottom: 20px;
 }
+.service-item::after {
+	content: "";
+	height: 1px;
+	flex-grow: 1;
+	margin: 0 6px;
+	background: rgba(157, 164, 189, 0.12);
+}
 .service-item-text {
 }
 .service-item-cost {
+	order: 1;
 }
 .btn-service {
 	display: block;
@@ -343,16 +394,36 @@ body {
 }
 .why-we-items {
 	display: flex;
+	flex-wrap: wrap;
 }
 .why-we-item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	width: 170px;
+	height: 133px;
+	padding: 20px 24px;
+	background: #f7f7f7;
+}
+.why-we-item:nth-child(2n-1) {
+	margin-right: 30px;
+	margin-bottom: 30px;
+}
+.why-we-item:nth-child(2n) {
+	margin-top: 30px;
 }
 .why-we-item-count {
+	margin-bottom: 6px;
 	font-weight: 700;
 	font-size: 42px;
 	line-height: 1.36;
 	letter-spacing: 0.05em;
 
 	color: var(--fourth-text-color);
+}
+.why-we-item-count::after {
+	content: "";
 }
 .why-we-item-text {
 	font-weight: 600;
@@ -362,20 +433,15 @@ body {
 	color: var(--fourth-text-color);
 }
 .why-we-up-text {
-	font-weight: 600;
-	font-size: 11px;
-	line-height: 1.36;
-	letter-spacing: 0.1em;
-	text-transform: uppercase;
-
 	color: var(--fourth-text-color);
 }
+.why-we-up-text::before {
+	background: var(--fourth-text-color);
+}
+
 .why-we-title {
-	font-family: Raleway;
-	font-weight: 700;
 	font-size: 42px;
 	line-height: 1.17;
-	letter-spacing: 0.05em;
 
 	color: var(--second-title-color);
 }
@@ -395,14 +461,10 @@ body {
 .team-box {
 }
 .team-up-text {
-	margin-bottom: 20px;
-	font-weight: 600;
-	font-size: 11px;
-	line-height: 1.36;
-	letter-spacing: 0.1em;
-	text-transform: uppercase;
-
 	color: var(--fourth-text-color);
+}
+.team-up-text::before {
+	background: var(--fourth-text-color);
 }
 .team-title {
 	margin-bottom: 44px;
@@ -447,6 +509,29 @@ body {
 	color: var(--accent-color);
 }
 
+.social-items {
+	display: flex;
+}
+.social-items li:not(:last-child) {
+	margin-right: 10px;
+}
+.social-link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+	background: #ffffff;
+}
+.link-icon {
+	fill: currentColor;
+}
+.social-link:hover,
+.social-link:focus {
+	color: var(--accent-color);
+}
+
 /* sections portpholio  */
 .portpholio {
 }
@@ -454,14 +539,10 @@ body {
 }
 .portpholio-text {
 	margin-bottom: 44px;
-
-	font-weight: 600;
-	font-size: 11px;
-	line-height: 1.36;
-	letter-spacing: 0.1em;
-	text-transform: uppercase;
-
 	color: var(--fourth-text-color);
+}
+.portpholio-text::before {
+	background: var(--fourth-text-color);
 }
 .portpholio-items {
 	display: flex;
