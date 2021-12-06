@@ -1,0 +1,24 @@
+@import "../utils/colors";
+
+.online {
+	width: 1280px;
+	height: 644px;
+	margin: 0 auto;
+	background: #191c26;
+	background-image: url(../images/bg-contacts.jpg);
+	background-repeat: no-repeat;
+	background-position: 100% 0;
+}
+.two-box {
+	display: flex;
+	flex-wrap: wrap;
+}
+.box-form {
+	display: flex;
+	flex-wrap: wrap;
+	width: 50%;
+}
+.online-title {
+	margin-right: 50px;
+	margin-bottom: 44px;
+}

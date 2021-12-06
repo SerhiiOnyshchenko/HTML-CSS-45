@@ -1,0 +1,55 @@
+@import "../utils/colors";
+.contacts {
+	padding-left: 100px;
+}
+.contacts-title {
+	margin-bottom: 40px;
+}
+.contacts-address {
+}
+.contacts-list {
+	margin-bottom: 70px;
+}
+.contacts-item {
+	width: 270px;
+	margin-bottom: 20px;
+}
+.contacts-item:last-child {
+	margin-bottom: 0;
+}
+.contacts-link {
+	display: flex;
+	align-items: center;
+	font-style: normal;
+	font-size: 18px;
+	line-height: 1.67;
+	letter-spacing: 0.02em;
+
+	color: getColor("third-text-color");
+}
+
+.contacts-link-icon {
+	display: inline-block;
+	stroke-width: 0;
+	margin-right: 16px;
+}
+.icon-pinmap {
+	align-self: baseline;
+}
+.contacts-link--line {
+	text-decoration: underline;
+}
+.contacts-up-text {
+	color: #ffffff;
+}
+.contacts-up-text::before {
+	background-color: getColor("third-text-color");
+	opacity: 0.4;
+}
+.contacts-text {
+	font-size: 18px;
+	line-height: 1.67;
+	letter-spacing: 0.02em;
+
+	color: getColor("third-text-color");
+}

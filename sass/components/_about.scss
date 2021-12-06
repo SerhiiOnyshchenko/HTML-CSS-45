@@ -1,0 +1,49 @@
+@import "../utils/colors";
+
+.about {
+}
+.about-box {
+	display: flex;
+}
+
+.about-items {
+	display: flex;
+}
+.about-item {
+}
+.about-item + .about-item {
+	margin-left: 30px;
+}
+.about-img {
+}
+.about-article {
+	margin-left: 64px;
+}
+.about-up-title {
+	color: getColor("fourth-text-color");
+}
+.about-title {
+	color: getColor("second-title-color");
+}
+.about-pre-title {
+	margin-bottom: 20px;
+
+	font-size: 18px;
+	line-height: 1.67;
+	letter-spacing: 0.02em;
+
+	color: getColor("main-text-color");
+}
+.about-text {
+	width: 477px;
+	margin-bottom: 40px;
+
+	font-size: 14px;
+	line-height: 1.86;
+	letter-spacing: 0.02em;
+
+	color: getColor("main-text-color");
+}
+.about-btn {
+	color: getColor("second-btn-color");
+}

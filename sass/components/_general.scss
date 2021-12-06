@@ -1,0 +1,56 @@
+@import "../utils/colors";
+// @import "../utils/transition";
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+button {
+	cursor: pointer;
+}
+
+body {
+	font-family: "Raleway", sans-serif;
+	font-family: "Open Sans", sans-serif;
+	color: #303030;
+}
+.sections {
+	padding: 130px 55px;
+}
+.container {
+	width: 1200px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+.geniral-title {
+	margin-bottom: 20px;
+	font-family: Raleway;
+	font-weight: 700;
+	font-size: 42px;
+	line-height: 1.17;
+	letter-spacing: 0.05em;
+	color: var(--main-title-color);
+}
+.geniral-up-title {
+	position: relative;
+	padding-left: 84px;
+	margin-bottom: 20px;
+	font-weight: 600;
+	font-size: 11px;
+	line-height: 1.36;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+
+	color: var(--fourth-text-color);
+}
+
+.geniral-up-title::before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 0;
+	height: 1px;
+	width: 63px;
+	transform: translateY(-50%);
+	background-color: var(--fourth-text-color);
+}

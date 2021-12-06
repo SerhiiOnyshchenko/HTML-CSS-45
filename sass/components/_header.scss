@@ -1,0 +1,83 @@
+@import "../utils/colors";
+
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	padding-top: 32px;
+}
+.header-box {
+	display: flex;
+	align-items: center;
+}
+
+.nav-items {
+	display: flex;
+	align-items: center;
+}
+
+.logo {
+	margin-right: 70px;
+}
+
+.menu-items {
+	display: flex;
+	align-items: center;
+}
+
+.menu-item:not(:last-child) {
+	margin-right: 40px;
+}
+
+.menu-link {
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 1.34;
+	letter-spacing: 0.1em;
+	color: getColor("header-text-color");
+}
+.menu-link:hover,
+.menu-link:focus {
+	color: getColor("accent-color");
+}
+.cont-btn {
+	margin-left: auto;
+}
+.link-tel {
+	margin-right: 40px;
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 1.33;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+
+	color: getColor("header-text-color");
+}
+.link-tel:hover,
+.link-tel:focus {
+	color: getColor("accent-color");
+}
+.btn-record {
+	min-width: 160px;
+	padding: 12px;
+
+	border: 1px solid getColor("accent-color");
+	box-sizing: border-box;
+	border-radius: 25px;
+
+	font-family: inherit;
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 1.33;
+	letter-spacing: 0.09em;
+	text-transform: uppercase;
+
+	color: getColor("main-btn-color");
+	background: rgba(0, 0, 0, 0);
+}
+.btn-record:hover,
+.btn-record:focus {
+	background: getColor("accent-color");
+	color: getColor("main-btn-color");
+}

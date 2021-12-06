@@ -1,0 +1,44 @@
+@import "../utils/colors";
+.footer {
+	padding: 55px 15px;
+}
+.footer-box {
+	display: flex;
+}
+.footer-copyr {
+	display: flex;
+	align-items: center;
+	font-weight: 600;
+	font-size: 11px;
+	line-height: 1.36;
+	letter-spacing: 0.2em;
+
+	color: getColor("third-text-color");
+}
+.footer-sociale-items {
+	padding-left: 60px;
+	display: flex;
+	margin-left: auto;
+}
+.before-line {
+	position: relative;
+}
+.before-line::before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 60px;
+	height: 1px;
+	background-color: getColor("fourth-text-color");
+	transform: translateY(-50%);
+}
+.footer-sociale-item {
+	display: flex;
+	align-items: center;
+	margin-left: 40px;
+}
+.footer-link-inst {
+}
+.link-youtube {
+}

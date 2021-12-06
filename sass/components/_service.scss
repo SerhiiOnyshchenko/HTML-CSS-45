@@ -1,0 +1,58 @@
+@import "../utils/colors";
+
+.service {
+	background: url(../images/bg-servise.jpg) no-repeat center;
+}
+.service-up-title {
+	color: getColor("second-text-color");
+}
+.service-up-title::before {
+	background-color: getColor("second-text-color");
+}
+
+.service-title {
+	margin-bottom: 44px;
+}
+.service-box {
+	display: flex;
+	width: 100%;
+	margin-bottom: 50px;
+}
+.service-items {
+	width: 100%;
+	padding: 30px 40px;
+	background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+}
+.service-items:last-child {
+	background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+}
+.service-item {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+	font-size: 18px;
+	line-height: 1.67;
+	letter-spacing: 0.02em;
+
+	color: getColor("third-text-color");
+}
+.service-item:not(:last-child) {
+	margin-bottom: 20px;
+}
+.service-item::after {
+	content: "";
+	height: 1px;
+	flex-grow: 1;
+	margin: 0 6px;
+	background: rgba(157, 164, 189, 0.12);
+}
+.service-item-text {
+}
+.service-item-cost {
+	order: 1;
+}
+.btn-service {
+	display: block;
+	margin: 0 auto;
+}

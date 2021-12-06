@@ -1,0 +1,20 @@
+@import "../utils/colors";
+.portpholio {
+}
+.portpholio-box {
+}
+.portpholio-text {
+	margin-bottom: 44px;
+	color: getColor("fourth-text-color");
+}
+.portpholio-text::before {
+	background: getColor("fourth-text-color");
+}
+.portpholio-items {
+	display: flex;
+	flex-wrap: wrap;
+	margin: -15px;
+}
+.portpholio-item {
+	margin: 15px;
+}

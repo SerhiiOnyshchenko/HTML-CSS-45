@@ -1,0 +1,67 @@
+@import "../utils/colors";
+
+.team {
+	background: #f7f7f7;
+}
+.team-box {
+}
+
+.team-title {
+	margin-bottom: 44px;
+	color: getColor("second-title-color");
+}
+.team-items {
+	display: flex;
+	flex-wrap: wrap;
+	margin: -15px;
+}
+.team-item {
+	margin: 15px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.team-item-img {
+	margin-bottom: 30px;
+}
+.team-item-title {
+	margin-bottom: 8px;
+	font-size: 18px;
+	line-height: 1.39;
+	letter-spacing: 0.02em;
+
+	color: getColor("second-title-color");
+}
+.team-item-text {
+	margin-bottom: 30px;
+	font-size: 14px;
+	line-height: 1.36;
+	letter-spacing: 0.02em;
+
+	color: getColor("accent-color");
+}
+
+.social-items {
+	display: flex;
+}
+.social-items li:not(:last-child) {
+	margin-right: 10px;
+}
+.social-link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+	background: #ffffff;
+}
+.link-icon {
+	fill: currentColor;
+}
+.social-link:hover,
+.social-link:focus {
+	color: getColor("accent-color");
+}
