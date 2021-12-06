@@ -38,7 +38,7 @@
 	align-items: center;
 	margin-left: 40px;
 }
-.footer-link-inst {
-}
-.link-youtube {
+.footer-link:hover,
+.footer-link:focus {
+	color: getColor("accent-color");
 }

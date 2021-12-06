@@ -29,7 +29,7 @@ body {
 	font-size: 42px;
 	line-height: 1.17;
 	letter-spacing: 0.05em;
-	color: var(--main-title-color);
+	color: getColor("main-title-color");
 }
 .geniral-up-title {
 	position: relative;
@@ -41,7 +41,7 @@ body {
 	letter-spacing: 0.1em;
 	text-transform: uppercase;
 
-	color: var(--fourth-text-color);
+	color: getColor("fourth-text-color");
 }
 
 .geniral-up-title::before {
@@ -52,5 +52,5 @@ body {
 	height: 1px;
 	width: 63px;
 	transform: translateY(-50%);
-	background-color: var(--fourth-text-color);
+	background-color: getColor("fourth-text-color");
 }

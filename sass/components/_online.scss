@@ -14,9 +14,49 @@
 	flex-wrap: wrap;
 }
 .box-form {
-	display: flex;
-	flex-wrap: wrap;
 	width: 50%;
+}
+.inputs {
+	display: flex;
+	width: auto;
+}
+.inputs label + label {
+	margin-left: 30px;
+}
+.mar-bot-44 {
+	display: flex;
+	margin-bottom: 44px;
+}
+.box-form input {
+	width: 270px;
+	height: 24px;
+}
+.input-form {
+	background-color: transparent;
+	border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+}
+
+.input-form::placeholder,
+.input-form::placeholder {
+	font-weight: 600;
+	font-size: 11px;
+	line-height: 1.36;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+}
+.input-form:hover,
+.input-form:focus {
+	border-bottom: 1px solid #ffffff;
+	cursor: pointer;
+}
+.input-form:hover::placeholder,
+.input-form:focus::placeholder {
+	color: #ffffff;
+}
+.box-form textarea {
+	width: 560px;
+	min-height: 76px;
+	list-style: none;
 }
 .online-title {
 	margin-right: 50px;
