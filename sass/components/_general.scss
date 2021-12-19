@@ -14,10 +14,18 @@ body {
 	font-family: "Open Sans", sans-serif;
 	color: #303030;
 }
-.sections {
+.sections {		
+	@media screen and (max-width: 767px) {
+		padding: 0;
+
+		}
 	padding: 130px 55px;
 }
 .container {
+	@media screen and (max-width: 767px) {
+		padding: 0 31px;
+		width: 100%;
+	}
 	width: 1200px;
 	padding: 0 15px;
 	margin: 0 auto;

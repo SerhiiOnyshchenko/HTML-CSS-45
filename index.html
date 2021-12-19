@@ -30,18 +30,39 @@
    <body>
       <!-- шапка -->
       <header class="header">
-         <div class="container header-box">
-            <nav class="nav-items">
-               <a class="logo" href="./"><img src="./images/logo.svg" alt="логотип" /></a>
-               <ul class="menu-items">
-                  <li class="menu-item"><a class="menu-link" href="">О нас</a></li>
-                  <li class="menu-item"><a class="menu-link" href="">Услуги и цены</a></li>
-                  <li class="menu-item"><a class="menu-link" href="">Мастера</a></li>
-                  <li class="menu-item"><a class="menu-link" href="">Контакты</a></li>
+         <div class="container header__box">
+            <a class="logo" href="./"><img src="./images/logo.svg" alt="логотип" /></a>
+            <button
+               class="nav__toggle js-open-menu"
+               aria-label="open menu"
+               aria-expanded="false"
+               aria-controls="mobile-menu"
+            >
+               <svg
+                  width="24"
+                  height="16"
+                  viewBox="0 0 24 16"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+               >
+                  <path
+                     fill-rule="evenodd"
+                     clip-rule="evenodd"
+                     d="M0 2.66667V0H24V2.66667H0ZM0 9.33333H24V6.66667H0V9.33333ZM0 16H24V13.3333H0V16Z"
+                     fill="currentColor"
+                  />
+               </svg>
+            </button>
+            <nav class="header__nav nav">
+               <ul class="nav__list">
+                  <li class="nav__item"><a class="nav__link" href="">О нас</a></li>
+                  <li class="nav__item"><a class="nav__link" href="">Услуги и цены</a></li>
+                  <li class="nav__item"><a class="nav__link" href="">Мастера</a></li>
+                  <li class="nav__item"><a class="nav__link" href="">Контакты</a></li>
                </ul>
             </nav>
-            <div class="cont-btn">
-               <a class="link-tel" href="tel:+380441111111">+38 044 111 11 11</a>
+            <div class="cont">
+               <a class="cont__tel" href="tel:+380441111111">+38 044 111 11 11</a>
                <button class="btn-record" type="button">онлайн-запись</button>
             </div>
          </div>
@@ -49,18 +70,18 @@
 
       <main>
          <!-- головна -->
-         <section class="sectionsm">
-            <div class="container main">
-               <ul class="sociale-items">
-                  <li class="sociale-item"><a class="link-youtube" href="">Youtube</a></li>
-                  <li class="sociale-item"><a class="link-inst" href="">Instagram</a></li>
+         <section class="sections hero">
+            <div class="container hero__box">
+               <ul class="hero__sociale sociale">
+                  <li class="sociale__item"><a class="sociale__link" href="">Youtube</a></li>
+                  <li class="sociale__item"><a class="sociale__link sociale__link--inst" href="">Instagram</a></li>
                </ul>
-               <div class="main-bg">
-                  <p class="geniral-up-title main-up-title" lang="en">
+               <div class="hero__bg">
+                  <p class="geniral-up-title hero__up-title" lang="en">
                      A hair salon for men in Kyiv
                   </p>
-                  <h1 class="main-title geniral-title" lang="en">BarberShop</h1>
-                  <p class="main-text">
+                  <h1 class="hero__title geniral-title" lang="en">BarberShop</h1>
+                  <p class="hero__text">
                      Мы эксперты в модных мужских стрижках. <br />
                      Работаем быстро, осторожно и со вкусом.
                   </p>
